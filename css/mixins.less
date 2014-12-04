@@ -1,0 +1,84 @@
+.border-radius(@radius) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	border-radius: @radius;
+}
+
+.box-shadow(@shadow) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+
+.text-shadow(@shadow) {
+	text-shadow: @shadow;
+}
+
+.box-sizing(@boxmodel) {
+	-webkit-box-sizing: @boxmodel;
+	-moz-box-sizing: @boxmodel;
+	box-sizing: @boxmodel;
+}
+
+.opacity(@opacity) {
+	opacity: @opacity;
+	filter: ~`"progid:DXImageTransform.Microsoft.Alpha(opacity=" + "@{opacity}" * 100 + ")"`;
+}
+
+.transition(@transition) {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;
+	transition: @transition;
+}
+.transition-delay(@transition-delay) {
+	-webkit-transition-delay: @transition-delay;
+	-moz-transition-delay: @transition-delay;
+	-o-transition-delay: @transition-delay;
+	transition-delay: @transition-delay;
+}
+.transition-duration(@transition-duration) {
+	-webkit-transition-duration: @transition-duration;
+	-moz-transition-duration: @transition-duration;
+	-o-transition-duration: @transition-duration;
+	transition-duration: @transition-duration;
+}
+.transition-transform(@transition) {
+	-webkit-transition: -webkit-transform @transition;
+	-moz-transition: -moz-transform @transition;
+	-o-transition: -o-transform @transition;
+	transition: transform @transition;
+}
+
+.transform(@value) {
+	-webkit-transform: @value;  /* Chrome, Safari 3.1+ */
+	-moz-transform: @value;  /* Firefox 3.5-15 */
+	-ms-transform: @value;  /* IE 9 */
+	-o-transform: @value;  /* Opera 10.50-12.00 */
+	transform: @value;  /* Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+.vertical-middle() {
+	position: absolute;
+	top: 50%;
+	.transform(translate(0, -50%));
+}
+
+.horizontal-middle() {
+	position: absolute;
+	left: 50%;
+	.transform(translate(-50%, 0));
+}
+
+.absolute-middle() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	.transform(translate(-50%, -50%));
+}
+
+.link-shadow(@color1, @color2) {
+	color: @color1;
+	text-shadow: 0 0 10px @color2;
+	text-decoration: none;
+}
