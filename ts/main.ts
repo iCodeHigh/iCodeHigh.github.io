@@ -8,7 +8,7 @@ declare var $;
         $("footer").find(".year").html(today.getFullYear());
 
         var projects = new Projects({
-            $container: $(".projects")
+            $container: $("main").find(".container")
         });
         projects.get();
     });

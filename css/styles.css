@@ -4,7 +4,12 @@ h1,h2,h3,h4,h5,h6{font-weight:lighter;margin:0;padding:0}
 a{color:#8baf3d;text-decoration:none}
 h1{font-size:48px}
 h2{font-size:24px}
+.hidden{display:none}
 header{height:100vh;background:#f0f0f0;color:#333;text-align:center;border-bottom:5px solid #8baf3d}header .container{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
 header .logo img{width:100%;max-width:400px}
-main{padding:50px 0}main .container{width:90%;max-width:1024px;margin:0 auto}
+main{padding:50px 0}main .container{width:90%;max-width:800px;margin:0 auto}
+main .title{font-size:35px;margin-bottom:30px;text-align:center}
+main .loading{text-align:center;width:90%;max-width:400px;margin:0 auto}
+main .projects .project{background:#f0f0f0;color:#333;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;padding:10px;margin:10px 0}main .projects .project a{text-overflow:ellipsis;display:inline-block;width:100%;overflow:hidden;font-weight:normal}
+main .projects .project p{margin:0;font-size:12.8px}
 footer{text-align:center;padding:10px 0;background:#f0f0f0;color:#333;border-top:5px solid #8baf3d}

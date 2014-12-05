@@ -33,6 +33,10 @@ h2 {
 	font-size: @font-size-medium;
 }
 
+.hidden {
+	display: none;
+}
+
 header {
 	height: 100vh;
 	background: @header-bg;
@@ -54,8 +58,43 @@ main {
 
 	.container {
 		width: 90%;
-		max-width: 1024px;
+		max-width: 800px;
 		margin: 0 auto;
+	}
+
+	.title {
+		font-size: 35px;
+		margin-bottom: (@margin * 3);
+		text-align: center;
+	}
+
+	.loading {
+		text-align: center;
+		width: 90%;
+		max-width: 400px;
+		margin: 0 auto;
+	}
+
+	.projects {
+		.project {
+			background: @projects-bg;
+			color: @projects-color;
+			.border-radius(@border-radius);
+			padding: @padding;
+			margin: @margin 0;
+
+			a {
+				text-overflow: ellipsis;
+				display: inline-block;
+				width: 100%;
+				overflow: hidden;
+				font-weight: normal;
+			}
+			p {
+				margin: 0;
+				font-size: @font-size-small;
+			}
+		}
 	}
 }
 
