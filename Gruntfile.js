@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					// For mobile testing. Change to your private IP.
-					hostname: "localhost",
+					hostname: "10.10.10.79",
 					port: 8080,
 					base: "."
 				}
@@ -93,6 +93,6 @@ module.exports = function(grunt) {
 	});
 
 	// Development grunt task
-	grunt.registerTask("default", ["clean:js", "less", "ts", "connect", "watch"]);
-	grunt.registerTask("deploy", ["clean:js", "less", "ts", "uglify"]);
+	grunt.registerTask("default", ["less", "ts", "connect", "watch"]);
+	grunt.registerTask("deploy", ["less", "ts", "uglify"]);
 };

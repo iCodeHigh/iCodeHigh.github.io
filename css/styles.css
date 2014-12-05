@@ -1,5 +1,10 @@
-body{margin:0;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;background:#f0f0f0;color:#222}
+body{margin:0;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;background:#333;color:#f0f0f0}
+ul,li{list-style:none;margin:0;padding:0}
 h1,h2,h3,h4,h5,h6{font-weight:lighter;margin:0;padding:0}
+a{color:#8baf3d;text-decoration:none}
 h1{font-size:48px}
 h2{font-size:24px}
-header{height:100vh;background:#222;color:#f0f0f0;text-align:center}header .container{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+header{height:100vh;background:#f0f0f0;color:#333;text-align:center;border-bottom:5px solid #8baf3d}header .container{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);transform:translate(-50%, -50%);}
+header .logo img{width:100%;max-width:400px}
+main{padding:50px 0}main .container{width:90%;max-width:1024px;margin:0 auto}
+footer{text-align:center;padding:10px 0;background:#f0f0f0;color:#333;border-top:5px solid #8baf3d}
