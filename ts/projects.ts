@@ -6,7 +6,7 @@ class Projects {
      * @type {Array}
      */
     private activeRepos:string[] = [
-        //"iCodeHigh.github.io"
+        "switcher"
     ];
     private repos = {};
     private perPage:number = 100;
