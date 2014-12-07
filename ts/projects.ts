@@ -14,6 +14,7 @@ class Projects {
     private reposURL:string = "https://api.github.com/users/iCodeHigh/repos";
     private JSONPCallback:string = "callback=?";
     private $container;
+    private mainPage:string = "http://icodehigh.github.io/";
 
     constructor(opc:ProjectsOptions) {
         this.$container = opc.$container;
@@ -59,7 +60,7 @@ class Projects {
             var project:Project = this.repos[this.activeRepos[i]];
             if (project) {
                 var html = "<li><div class='project'><h3><a href='" +
-                project.html_url + "' target='_blank'>" + project.name +
+                this.mainPage + this.activeRepos[i] + "' target='_blank'>" + project.name +
                 "</a></h3><p>" + project.description + "</p></div></li>";
                 this.$(".projects").append(html);
             }
